@@ -23,6 +23,11 @@ public class CashMachine {
             System.out.println("Za mało siana!!!");
         }
 
+        for(int i = 0; i< 100; i++){
+            ba.deposit(i);
+            System.out.println(ba.getAccountState());
+        }
+
         for (int i = 0; i < 100; i++) {
             ba.withdraw(10 * i);
             System.out.println(ba.getAccountState());

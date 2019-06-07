@@ -17,6 +17,9 @@ public class BankAccount {
 
 
     public void deposit(double money) {
+        if(money <=0){
+            throw new PustakException();
+        }
         accountState += money;
 
     }
